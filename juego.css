@@ -1,0 +1,89 @@
+body{
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom, white, white);
+    text-align:center;
+    padding:40px;
+}
+
+header{
+    background: linear-gradient(to right, #b30000, #ffffff);
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    color:#8B0000;
+}
+
+
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    margin:20px;
+    text-decoration:none;
+    color:#8B0000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+section{
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+.pregunta{
+    margin:30px;
+    font-size:20px;
+    text-align:left;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.boton{
+    display:block;
+    text-align:center;
+    margin:40px;
+}
+
+.boton a{
+    background:#8B0000;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:10px;
+}
+.boton button{
+    background:#8B0000;
+    color:white;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+}
+
+ /* 📲 Tablet */
+    @media (max-width: 900px){
+        .contenedor{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* 📱 Celular */
+    @media (max-width: 600px){
+        .contenedor{
+            grid-template-columns: 1fr;
+        }
+
+        nav{
+            flex-direction:column;
+            text-align:center;
+        }
+    }

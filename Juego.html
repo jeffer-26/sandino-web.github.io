@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juego Histórico</title>
+<link rel="stylesheet" href="juego.css">
+</head>
+
+<body>
+
+
+
+
+<nav>
+<a href="index.html">Biografía</a>
+<a href="lucha.html">Lucha</a>
+<a href="legado.html">Legado</a>
+<a href="contexto.html">Imagenes</a>
+<a href="Juego.html">Juego historico</a>
+</nav>
+
+
+<form id="quizForm">
+<h1>Juego Histórico sobre Sandino</h1>
+
+<div class="pregunta">
+<p>1) ¿En qué año inició la resistencia armada de Sandino?</p>
+<input type="radio" name="p1" value="1927"> 1927<br>
+<input type="radio" name="p1" value="1935"> 1935<br>
+<input type="radio" name="p1" value="1910"> 1910<br>
+</div>
+
+<div class="pregunta">
+<p>2) ¿Cómo se llamaba el ejército liderado por Sandino?</p>
+<input type="radio" name="p2" value="Ejército Defensor de la Soberanía Nacional"> Ejército Defensor de la Soberanía Nacional<br>
+<input type="radio" name="p2" value="Guardia Nacional"> Guardia Nacional<br>
+<input type="radio" name="p2" value="Ejército Liberal Unido"> Ejército Liberal Unido<br>
+</div>
+
+<div class="pregunta">
+<p>3) ¿En qué año murió Sandino?</p>
+<input type="radio" name="p3" value="1934"> 1934<br>
+<input type="radio" name="p3" value="1920"> 1920<br>
+<input type="radio" name="p3" value="1945"> 1945<br>
+</div>
+
+
+
+
+<div class="boton">
+<button type="button" onclick="evaluarQuiz()">Enviar respuesta</button>
+</div>
+
+
+<br><br>
+<a href="index.html">Volver a la página principal</a>
+
+
+</form>
+</body>
+
+<script>
+function mostrar(){
+    document.getElementById("resultado").innerHTML = 
+    "✔ Tus respuestas fueron enviadas correctamente.";
+}
+
+
+
+function evaluarQuiz() {
+
+    const r1 = document.querySelector('input[name="p1"]:checked')?.value;
+    const r2 = document.querySelector('input[name="p2"]:checked')?.value;
+    const r3 = document.querySelector('input[name="p3"]:checked')?.value;
+
+    if (!r1 || !r2 || !r3) {
+        alert("Responde todas las preguntas");
+        return;
+    }
+
+    let puntaje = 0;
+
+    if (r1 === "1927") puntaje++;
+    if (r2 === "Guardia Nacional") puntaje++;
+    if (r3 === "1934") puntaje++;
+
+    localStorage.setItem("resultadoQuiz", puntaje);
+
+    window.location.href = "gracias.html";
+}
+</script>
+
+</html>

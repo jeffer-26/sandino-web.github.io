@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resultado</title>
+</head>
+<body>
+    
+    <h2>Resultado del cuestionario</h2>
+
+<p id="mensaje"></p>
+
+<script>
+const puntaje = Number(localStorage.getItem("resultadoQuiz"));
+const mensaje = document.getElementById("mensaje");
+
+if (puntaje === 3) {
+  mensaje.textContent = "✅ ¡Excelente! Respondiste todo correcto.";
+} else if (puntaje === 2) {
+  mensaje.textContent = "👍 Muy bien, solo fallaste una.";
+} else if (puntaje === 1) {
+  mensaje.textContent = "⚠️ Solo acertaste una, puedes intentarlo otra vez.";
+} else {
+  mensaje.textContent = "❌ No acertaste, vuelve a estudiar e inténtalo.";
+}
+</script>
+
+<footer>
+Página informativa
+</footer>
+</body>
+</html>
