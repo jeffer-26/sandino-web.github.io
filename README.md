@@ -8,7 +8,7 @@
 ![image alt](https://github.com/jeffer-26/sandino-web.github.io/blob/20c978ef38f59402757313a7de3ad41ff37f2d0c/image5.jpeg)
 ![image alt](https://github.com/jeffer-26/sandino-web.github.io/blob/f18043e8420cb06fe48e491398e67c8948619834/image6.jpeg)
 ![image alt](https://github.com/jeffer-26/sandino-web.github.io/blob/b3196888849348554de2adb1c74bebcd459710a1/image7.jpeg)
-![image alt]()
+![image alt](https://github.com/jeffer-26/sandino-web.github.io/blob/e1332cfa4fd15cfa1e4fcce7bff0e4e363533e8d/image8.jpeg)
 ![image alt]()
 ![image alt]()
 ![image alt]()
